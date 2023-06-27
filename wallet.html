@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Exchange</title>
+  <link rel="stylesheet" href="stylew.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cryptocurrency Exchange</h1>
+    <div class="form">
+      <label for="amount">USD Amount:</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter USD amount">
+      <button id="convert-button" disabled>Convert to ETH</button>
+      <label for="eth-amount">ETH Amount:</label>
+      <input type="text" id="eth-amount" name="eth-amount" readonly>
+      <button id="buy-button" disabled>Buy ETH</button>
+      <div class="wallet">
+        <h2>Wallet</h2>
+        <p>USD Balance: $<span id="usd-balance">1000</span></p>
+        <p>ETH Balance: <span id="eth-balance">0.000000</span></p>
+
+        <button id="add-usd-button">Add USD</button>
+      </div>
+    </div>
+  </div>
+  <script src="scriptw.js"></script>
+</body>
+</html>

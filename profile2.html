@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" type="text/css" href="stylep2.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html"><img src="logo.svg" alt="NiFTx"></a>
+    <button class="logout-btn">Logout</button>
+  </div>
+
+  <div class="container">
+    <div id="personal-details">
+      <img src="NFT1.jpg" alt="Profile Photo">
+      <h1>Name: Dushyanth16</h1>
+      <p>Age: 20</p>
+      <p>Email: dushyanth@gmail.com</p>
+    </div>
+
+    <button id="banking-details-btn" class="section-button">Banking Details</button>
+    <div id="bank-popup" class="popup">
+      <button id="close-bank-popup">&times;</button>
+      <h2>Select Bank</h2>
+      <ul>
+        <li onclick="showBankDetails('Bank 1')">Bank 1</li>
+        <li onclick="showBankDetails('Bank 2')">Bank 2</li>
+        <li onclick="showBankDetails('Bank 3')">Bank 3</li>
+        <li onclick="showBankDetails('Bank 4')">Bank 4</li>
+        <li onclick="showBankDetails('Bank 5')">Bank 5</li>
+      </ul>
+    </div>
+
+    <div id="bank-details-popup" class="popup">
+      <button id="close-bank-details-popup">&times;</button>
+      <h2 id="bank-name"></h2>
+      <p>Account Number: <span id="account-number"></span></p>
+      <p>Account Type: <span id="account-type"></span></p>
+      <p>Bank Balance: <span id="bank-balance"></span></p>
+      <p>Charges for NFT Transactions: <span id="transaction-charges"></span></p>
+    </div>
+
+    <button id="transactions-btn" class="section-button">Transactions</button>
+    <div id="transactions-popup" class="popup">
+      <button id="close-transactions-popup">&times;</button>
+      <h2>Transactions</h2>
+      <div id="transactions-content">
+        <table>
+          <tr>
+            <th>NFT Name</th>
+            <th>Owner</th>
+            <th>Date</th>
+            <th>Bank Used</th>
+          </tr>
+          <tr>
+            <td>NFT 1</td>
+            <td>Owner 1</td>
+            <td>2023-05-18</td>
+            <td>Bank 1</td>
+          </tr>
+          <tr>
+            <td>NFT 2</td>
+            <td>Owner 2</td>
+            <td>2023-05-17</td>
+            <td>Bank 2</td>
+          </tr>
+          <tr>
+            <td>NFT 3</td>
+            <td>Owner 3</td>
+            <td>2023-05-17</td>
+            <td>Bank 3</td>
+          </tr>
+          <tr>
+            <td>NFT 4</td>
+            <td>Owner 4</td>
+            <td>2023-05-17</td>
+            <td>Bank 4</td>
+          </tr>
+          <tr>
+            <td>NFT 5</td>
+            <td>Owner 5</td>
+            <td>2023-05-17</td>
+            <td>Bank 5</td>
+          </tr>
+          <tr>
+            <td>NFT 6</td>
+            <td>Owner 6</td>
+            <td>2023-05-17</td>
+            <td>Bank 6</td>
+          </tr>
+          <tr>
+            <td>NFT 7</td>
+            <td>Owner 7</td>
+            <td>2023-05-17</td>
+            <td>Bank 8</td>
+          </tr>
+          <!-- Add more rows dynamically with JavaScript -->
+        </table>
+      </div>
+    </div>
+
+    <a href="collection2.html" id="nft-trading-btn" class="section-button">NFT Trading</a>
+  </div>
+
+  <script src="scriptp2.js"></script>
+</body>
+</html>

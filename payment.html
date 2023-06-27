@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway</title>
+  <link rel="stylesheet" href="stylepay.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Gateway</h1>
+    <form id="payment-form">
+      <label for="card-type">Card Type:</label>
+      <select id="card-type" name="card-type">
+        <option value="debit">Debit Card</option>
+        <option value="credit">Credit Card</option>
+      </select>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required>
+      <label for="card-holder">Card Holder Name:</label>
+      <input type="text" id="card-holder" name="card-holder" placeholder="Enter card holder name" required>
+      <label for="expiry-date">Expiry Date:</label>
+      <input type="text" id="expiry-date" name="expiry-date" placeholder="Enter expiry date (dd/mm/yyyy)" required>
+      <label for="phone-number">Phone Number:</label>
+      <input type="text" id="phone-number" name="phone-number" placeholder="Enter phone number" required>
+      <button id="otp-button" type="button">Generate OTP</button>
+      <label for="otp">Enter OTP:</label>
+      <input type="text" id="otp" name="otp" placeholder="Enter OTP">
+      <button id="buy-button" disabled>Buy Now</button>
+    </form>
+  </div>
+  <script src="scriptpay.js"></script>
+</body>
+</html>

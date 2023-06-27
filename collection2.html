@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NFT Collections</title>
+  <link rel="stylesheet" type="text/css" href="stylec2.css">
+</head>
+<body>
+  <header>
+    <h1>NFT Collections</h1>
+    <button class="collection-button" onclick="toggleCollections('all')">All NFT Collections</button>
+    <button class="collection-button" onclick="toggleCollections('my')">My NFT Collections</button>
+  </header>
+  <main>
+    <section id="allCollections">
+      <h2>All NFT Collections</h2>
+      <div class="collection">
+        <h3>Collection 1</h3>
+        <div class="nft-list">
+          <div class="nft-item"
+            onclick="showNFTDetails(1, 'Collection 1', 'NFT 1', '1.99', 'Creator 1', 'NFT 1 description')">
+            <img src="NFT1.jpg" alt="NFT 1">
+            <div class="nft-details">
+              <h4>NFT 1</h4>
+              <p class="price">1.99 ETH</p>
+              <p class="creator">Created by: Creator 1</p>
+            </div>
+          </div>
+          <div class="nft-item"
+            onclick="showNFTDetails(2, 'Collection 1', 'NFT 2', '2.99', 'Creator 2', 'NFT 2 description')">
+            <img src="NFT2.jpg" alt="NFT 2">
+            <div class="nft-details">
+              <h4>NFT 2</h4>
+              <p class="price">2.99 ETH</p>
+              <p class="creator">Created by: Creator 2</p>
+            </div>
+          </div>
+          <div class="nft-item"
+            onclick="showNFTDetails(3, 'Collection 1', 'NFT 3', '3.99', 'Creator 3', 'NFT 3 description')">
+            <img src="NFT3.jpg" alt="NFT 3">
+            <div class="nft-details">
+              <h4>NFT 3</h4>
+              <p class="price">3.99 ETH</p>
+              <p class="creator">Created by: Creator 3</p>
+            </div>
+          </div>
+          <div class="nft-item"
+            onclick="showNFTDetails(4, 'Collection 1', 'NFT 4', '4.99', 'Creator 4', 'NFT 4 description')">
+            <img src="NFT4.jpg" alt="NFT 4">
+            <div class="nft-details">
+              <h4>NFT 4</h4>
+              <p class="price">4.99 ETH</p>
+              <p class="creator">Created by: Creator 4</p>
+            </div>
+          </div>
+          <!-- Add more NFT items for Collection 1 -->
+        </div>
+      </div>
+      <div class="collection">
+        <h3>Collection 2</h3>
+        <div class="nft-list">
+          <div class="nft-item"
+            onclick="showNFTDetails(5, 'Collection 2', 'NFT 5', '5.99', 'Creator 2', 'NFT 5 description')">
+            <img src="NFT5.jpg" alt="NFT 5">
+            <div class="nft-details">
+              <h4>NFT 5</h4>
+              <p class="price">5.99 ETH</p>
+              <p class="creator">Created by: Creator 2</p>
+            </div>
+          </div>
+          <div class="nft-item"
+            onclick="showNFTDetails(6, 'Collection 2', 'NFT 6', '6.99', 'Creator 3', 'NFT 6 description')">
+            <img src="NFT6.jpg" alt="NFT 6">
+            <div class="nft-details">
+              <h4>NFT 6</h4>
+              <p class="price">6.99 ETH</p>
+              <p class="creator">Created by: Creator 3</p>
+            </div>
+          </div>
+          <div class="nft-item"
+            onclick="showNFTDetails(7, 'Collection 2', 'NFT 7', '7.99', 'Creator 4', 'NFT 7 description')">
+            <img src="NFT7.jpg" alt="NFT 7">
+            <div class="nft-details">
+              <h4>NFT 7</h4>
+              <p class="price">7.99 ETH</p>
+              <p class="creator">Created by: Creator 4</p>
+            </div>
+          </div>
+          <div class="nft-item"
+            onclick="showNFTDetails(8, 'Collection 2', 'NFT 8', '9.99', 'Creator 3', 'NFT 8 description')">
+            <img src="NFT8.jpg" alt="NFT 8">
+            <div class="nft-details">
+              <h4>NFT 8</h4>
+              <p class="price">6.99 ETH</p>
+              <p class="creator">Created by: Creator 3</p>
+            </div>
+          </div>
+          <!-- Add more NFT items for Collection 2 -->
+        </div>
+      </div>
+      <!-- Add more collections -->
+    </section>
+
+    <section id="myCollections" style="display: none;">
+      <h2>My NFT Collections</h2>
+      <div id="myNFTList"></div>
+    </section>
+
+    <div id="nftModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close-button" onclick="hideNFTDetails()">&times;</span>
+        <div class="nft-details">
+          <h4 id="modalTitle"></h4>
+          <img id="modalImage" src="" alt="NFT Image">
+          <p id="modalPrice"></p>
+          <p id="modalCreator"></p>
+          <p id="modalDescription"></p>
+          <button id="buyButton" onclick="buyNFT()">Buy NFT</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="scriptc2.js"></script>
+</body>
+</html>

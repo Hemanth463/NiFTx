@@ -1,0 +1,129 @@
+body {
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar .logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar .logout-btn img {
+  height: 30px;
+  width: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+#personal-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#personal-details img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.section-button {
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 20px auto;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #333;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  max-height: 400px;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.popup h2 {
+  color: #fff;
+}
+
+.popup button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#transactions-popup {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#transactions-content {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#nft-trading-btn {
+  display: block;
+  width: 200px;
+  height: 60px; /* Added height to match other buttons */
+  margin: 0 auto;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
